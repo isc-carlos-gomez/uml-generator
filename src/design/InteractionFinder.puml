@@ -1,0 +1,11 @@
+@startuml
+
+
+InteractionGenerator ..> FragmentFinder
+InteractionGenerator ..> Interaction: create >
+
+FragmentFinder ..> Fragment: find >
+
+Interaction *--> Fragment: *fragment
+
+@enduml
